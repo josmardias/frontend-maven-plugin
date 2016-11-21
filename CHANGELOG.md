@@ -4,6 +4,7 @@
 
 ### 2.0
 
+* Drop support for specific goals (grunt, gulp, karma, webpack...), use NPM scripts instead.
 * Removed helper scripts, out of plugin scope.
 
 ### 1.3
