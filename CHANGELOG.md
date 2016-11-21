@@ -2,6 +2,10 @@
 
 ## Changelog
 
+### 2.0
+
+* Removed helper scripts, out of plugin scope.
+
 ### 1.3
 
 * Fix `yarn` for Windows
