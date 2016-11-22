@@ -2,31 +2,25 @@
 
 > You're in the `next` branch, a _work in progress_ 2.0 version
 
-This plugin downloads/installs Node and NPM locally for your project, runs `npm install`, and any npm script.
-It's supposed to work on Windows, OS X and Linux.
+This plugin downloads/installs Node and NPM locally for your project, runs `npm install`, and any npm script.  
+It's supposed to work on Windows, OS X and Linux.  
+**Notice:** _This plugin will not support specific goals for NPM packages (Grunt, Webpack...). Use NPM scripts for that._  
+**Notice:** _This plugin will not support already installed Node or npm versions. Use the `exec-maven-plugin` instead._
 
-If you prefer [Yarn](https://yarnpkg.com/) over [NPM](https://www.npmjs.com/) for your node package fetching, 
-this plugin can also download Node and Yarn and then run `yarn install` for your project.
-
-#### What is this plugin meant to do?
-- Let you keep your frontend and backend builds as separate as possible, by
-reducing the amount of interaction between them to the bare minimum; using only 1 plugin.
-- Let you use Node.js and its libraries in your build process without installing Node/NPM
-globally for your build system
-- Let you ensure that the version of Node and NPM being run is the same in every build environment
-
-#### What is this plugin not meant to do?
-- Not meant to replace the developer version of Node - frontend developers will still install Node on their
-laptops, but backend developers can run a clean build without even installing Node on their computer.
-- Not meant to install Node for production uses. The Node usage is intended as part of a frontend build,
-running common javascript tasks such as minification, obfuscation, compression, packaging, testing etc.
-
-**Notice:** _This plugin does not support already installed Node or npm versions. Use the `exec-maven-plugin` instead._
+This plugin can also download [Yarn](https://yarnpkg.com/) as a [NPM](https://www.npmjs.com/) alternative, and then run `yarn install`.
 
 ## Requirements
-
 * _Maven 3_ and _Java 1.7_
 * For _Maven 2_ support take a look at the [wiki](https://github.com/eirslett/frontend-maven-plugin/wiki#maven-2).
+
+#### What is this plugin meant to do?
+- Let backend developers to run a clean build without a installing Node on their development environment.
+- Let you ensure that the version of Node and NPM being run is the same in every build environment
+- Let you build frontend for deployment.
+
+#### What is this plugin not meant to do?
+- Not meant to work as a frontend developer environment.
+- Not meant to install Node for production usage (just to handle frontend build).
 
 ## Installation
 
