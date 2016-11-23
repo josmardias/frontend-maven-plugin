@@ -11,7 +11,6 @@ This plugin can also download [Yarn](https://yarnpkg.com/) as a [NPM](https://ww
 
 ## Requirements
 * _Maven 3_ and _Java 1.7_
-* For _Maven 2_ support take a look at the [wiki](https://github.com/eirslett/frontend-maven-plugin/wiki#maven-2).
 
 #### What is this plugin meant to do?
 - Let backend developers to run a clean build without a installing Node on their development environment.

@@ -5,6 +5,7 @@
 ### 2.0
 
 * Drop support for specific goals (grunt, gulp, karma, webpack...), use NPM scripts instead.
+* Drop support for Maven 2
 * Drop support for m2e lifecycles.
 * Removed helper scripts, out of plugin scope.
 
