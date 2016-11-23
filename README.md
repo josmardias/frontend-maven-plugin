@@ -268,14 +268,6 @@ tag of an execution like this:
 </configuration>
 ```
 
-
-## Eclipse M2E support
-
-This plugin contains support for M2E, including lifecycle mappings and support for incremental builds in Eclipse.
-The `install-node-and-npm` goal will only run on a full project build. The other goals support incremental builds
-to avoid doing unnecessary work. During an incremental build the `npm` goal will only run if the `package.json` file
-has been changed. See the wiki for more information.
-
 ## To build this project:
 
 Run `$ mvn clean install`
